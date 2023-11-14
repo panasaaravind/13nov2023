@@ -1,0 +1,27 @@
+[data-aravind="aravind"]{
+    width: 400px;
+    height: 400px;
+    background: red;
+    margin: 100px auto;
+    transform: rotate(0deg);
+    transition: all 3s linear;
+    animation-name: xyz;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+[data-aravind="aravind"]:hover{
+    background-color: green;
+    transform: rotate(360deg);
+}
+@keyframes xyz{
+    from{
+        background-color: red;
+        transform: rotate(0deg);
+    }
+    to{
+        background-color: green;
+        transform: rotate(360deg);
+    }
+}
